@@ -1,4 +1,4 @@
-package com.learn.sb3m.supermarket.entity;
+package com.learn.sb3m.supermarket.domain.model;
 
 import java.math.BigDecimal;
 

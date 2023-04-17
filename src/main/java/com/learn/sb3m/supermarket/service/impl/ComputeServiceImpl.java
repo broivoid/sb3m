@@ -1,6 +1,6 @@
 package com.learn.sb3m.supermarket.service.impl;
 
-import com.learn.sb3m.supermarket.entity.Fruit;
+import com.learn.sb3m.supermarket.domain.model.Fruit;
 import com.learn.sb3m.supermarket.service.ComputeService;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;

@@ -1,8 +1,9 @@
 package com.learn.sb3m;
 
-import com.learn.sb3m.supermarket.entity.Apple;
-import com.learn.sb3m.supermarket.entity.Fruit;
-import com.learn.sb3m.supermarket.entity.Strawberry;
+import com.learn.sb3m.supermarket.domain.model.Apple;
+import com.learn.sb3m.supermarket.domain.model.Fruit;
+import com.learn.sb3m.supermarket.domain.model.Strawberry;
+import com.learn.sb3m.supermarket.domain.types.SaleTypeEnum;
 import com.learn.sb3m.supermarket.service.CashContext;
 import com.learn.sb3m.supermarket.service.ComputeService;
 
@@ -37,7 +38,7 @@ public class Sb3mApplicationTests {
 		peopleA.add(apple);
 		peopleA.add(strawberry);
 		BigDecimal tol = computeService.computeTol(peopleA);
-		CashContext cashContext1 = new CashContext("满100返10");
+		CashContext cashContext1 = new CashContext(SaleTypeEnum.RETURN.getCode());
 		BigDecimal result = cashContext1.getResult(tol);
 		logger.info("总价：{}", result);
 	}
